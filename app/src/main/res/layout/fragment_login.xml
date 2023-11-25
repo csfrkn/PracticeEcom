@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/landing5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tvLetsLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="124dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:text="Let's Login"
+            android:textAlignment="center"
+            android:textColor="#B2602D"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvDontHaveAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:text="@string/signUpTitle"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvLetsLogin" />
+
+
+        <EditText
+            android:id="@+id/edEmailLogin"
+            style="@style/editText"
+            android:layout_width="350dp"
+            android:layout_height="@dimen/edittextHeight"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvDontHaveAccount" />
+
+        <EditText
+            android:id="@+id/edPasswordLogin"
+            style="@style/editText"
+            android:layout_width="350dp"
+            android:layout_height="@dimen/edittextHeight"
+            android:layout_marginTop="15dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edEmailLogin" />
+
+        <TextView
+            android:id="@+id/tvForgotPasswordLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Forgot Password?"
+            android:textAlignment="center"
+            app:layout_constraintStart_toStartOf="@+id/edPasswordLogin"
+            app:layout_constraintTop_toBottomOf="@+id/edPasswordLogin" />
+
+        <com.github.leandroborgesferreira.loadingbutton.customViews.CircularProgressButton
+            android:id="@+id/buttonLoginLogin"
+            style="@style/buttonStyle"
+            android:layout_width="350dp"
+            android:layout_height="@dimen/mediumButtonHeight"
+            android:layout_marginTop="120dp"
+            android:text="Login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvForgotPasswordLogin"
+            app:spinning_bar_color="@color/white" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

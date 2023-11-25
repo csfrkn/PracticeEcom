@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "489111964436",
+    "project_id": "practiceecom-257fa",
+    "storage_bucket": "practiceecom-257fa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:489111964436:android:86a4b398237713e31d5001",
+        "android_client_info": {
+          "package_name": "com.fg.practiceecom"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnZ3EhWEGLRgCxlRYKc6G5AatNCZvR6MY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

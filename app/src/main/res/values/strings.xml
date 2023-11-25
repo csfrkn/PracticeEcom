@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">PracticeEcom</string>
+    <string name="title">The Ultimate\nShopping\nOdyssey</string>
+    <string name="secondTitle">Where Trends and Savings Collide!</string>
+    <string name="signUpTitle">Don\'t you still have an account?\nSign up here!</string>
+    <string name="see">S\ne\ne</string>
+    <string name="forr">F\no\nr</string>
+    <string name="you">Y\no\nu</string>
+</resources>
