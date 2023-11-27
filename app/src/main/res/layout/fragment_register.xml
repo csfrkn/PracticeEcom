@@ -33,6 +33,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:gravity="center"
+            android:textColor="@color/white"
             android:text="Do you have an account? Login now!"
             android:textAlignment="center"
             app:layout_constraintStart_toStartOf="@id/guidelineLoginLeft"

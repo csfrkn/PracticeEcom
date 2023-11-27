@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.view.ViewTreeObserver.OnGlobalLayoutListener
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.view.WindowCompat
 import androidx.core.view.get
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
@@ -46,10 +47,11 @@ class ShoppingActivity : AppCompatActivity() {
         binding.bottomNavigation.setupWithNavController(navController)
 
 
-
         lifecycleScope.launchWhenStarted {
             x()
         }
+
+        WindowCompat.setDecorFitsSystemWindows(window, false)
     }
 
     private suspend fun x() {
@@ -63,6 +65,7 @@ class ShoppingActivity : AppCompatActivity() {
                             backgroundColor = resources.getColor(R.color.gray)
                         }
                     }
+
                     else -> Unit
                 }
             }
